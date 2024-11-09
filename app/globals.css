@@ -2,20 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* My base theme settings */
+@layer base {
+  html {
+  --color-primary: #4285f4;
+  --color-secondary: #34a853;
+  --color-buttons: #fbbc05;
+  --color-typography: #ea4335;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import "@/styles/whiteTheme.css";

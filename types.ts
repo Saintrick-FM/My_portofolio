@@ -1,0 +1,1 @@
+export type Themes = "black" | "white" 
