@@ -1,23 +1,18 @@
-import HandleThemeSwiching from "@/components/ThemeSwitching";
-import { changeTheme } from "@/utils/helper";
-// import Image from "next/image";
+"use client"
+
+import * as React from "react"
+import ToggleTheme from "@/components/ToggleTheme"
+import Navbar from "@/components/Navbar"
+import Hero from "@/components/Hero"
 
 export default function Home() {
+  
+
   return (
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    //   <header>Header</header>
-    //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-    // Main
-    //   </main>
-    //   <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-    //    Footer
-    //   </footer>
-    // </div>
-    <div className='h-screen grid place-items-center bg-primary'>
-   <HandleThemeSwiching/>
-   </div>
-  );
+  <div className="flex flex-col items-center justify-center">
+    <header className="w-full"><Navbar/></header>
+    <main className="w-full bg-bg-1"><Hero/></main>
+    <footer>Footer</footer>
+  </div>
+  )
 }
-
-
-
