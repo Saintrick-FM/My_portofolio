@@ -4,6 +4,7 @@ import InputSearch, { Input } from "../ui/input";
 import { IBM_Plex_Mono } from "next/font/google";
 import Linkedin from "@/icons/linkedin";
 import Github from "@/icons/github";
+import ToggleTheme from "../ToggleTheme";
 const ibm = IBM_Plex_Mono({
   weight: ["300", "400", "500", "700", "100", "200"],
   subsets: ["latin"],
@@ -25,7 +26,7 @@ function Navbar() {
           </div>
 
           <div className="relative w-fit mt-[-1.00px] font-logo-m text-white text-[length:var(--logo-m-font-size)] tracking-[var(--logo-m-letter-spacing)] leading-[var(--logo-m-line-height)] whitespace-nowrap [font-style:var(--logo-m-font-style)]">
-            Francy Malonga
+            Francy
           </div>
         </div>
 
@@ -44,7 +45,7 @@ function Navbar() {
           <div className="inline-flex items-center gap-16 relative flex-[0_0_auto]">
             <InputSearch />
 
-            <div className="inline-flex items-start gap-8 relative flex-[0_0_auto]">
+            <div className="flex items-center gap-8 relative flex-[0_0_auto]">
               <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
                 <Linkedin />
                 <div className="relative w-fit mt-[-1.00px] font-media-m font-[number:var(--media-m-font-weight)] text-white text-[length:var(--media-m-font-size)] tracking-[var(--media-m-letter-spacing)] leading-[var(--media-m-line-height)] whitespace-nowrap [font-style:var(--media-m-font-style)]">
@@ -59,12 +60,12 @@ function Navbar() {
                 </div>
               </div>
 
-              {/* <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
-              <Linkedin/>
-                <div className="relative w-fit mt-[-1.00px] font-media-m font-[number:var(--media-m-font-weight)] text-white text-[length:var(--media-m-font-size)] tracking-[var(--media-m-letter-spacing)] leading-[var(--media-m-line-height)] whitespace-nowrap [font-style:var(--media-m-font-style)]">
+              <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
+              <ToggleTheme/>
+                {/* <div className="relative w-fit mt-[-1.00px] font-media-m font-[number:var(--media-m-font-weight)] text-white text-[length:var(--media-m-font-size)] tracking-[var(--media-m-letter-spacing)] leading-[var(--media-m-line-height)] whitespace-nowrap [font-style:var(--media-m-font-style)]">
                   Discord
-                </div>
-              </div> */}
+                </div> */}
+              </div>
             </div>
           </div>
         </div>

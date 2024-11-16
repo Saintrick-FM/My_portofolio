@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --color-bg-1:#292F36;
+--color-bg-2:#1A1E23;
+
+--color-brand-1:#12F7D6;
+--color-brand-2:#98FAEC;
+
+--color-grey:#43454D;
+--color-white:#ffffff;
+--color-html:#E54F26; */
+
 /* My base theme settings */
 @layer base {
   :root {
@@ -56,8 +66,11 @@
     --radius: 0.5rem;
     
     /* From Template */
-    --bg-2: #1a1e23;
-    --bg-1: #292F36;
+     /* --bg-2: #1a1e23; */
+     --bg-2: #98faec;
+
+     /* --bg-1: #292F36; */
+     --bg-1: #28A9E0;
 
     --brand-1: #12f7d6;
     --brand-2: #98faec;
@@ -119,6 +132,7 @@
     --chart-5: 340 75% 55%;
 
     /* From Template */
+    --bg-1:#292F36;
     --bg-2: #1a1e23;
 
     --brand-1: #12f7d6;
